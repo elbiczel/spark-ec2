@@ -15,15 +15,15 @@ cp -f /root/spark-ec2/cluster-url /root/mesos-ec2/cluster-url
 # workers.
 
 # Stop anything that is running
-/root/spark/sbin/stop-all.sh
+/root/spark/bin/stop-all.sh
 
 sleep 2
 
 # Start Master
-/root/spark/sbin/start-master.sh
+/root/spark/bin/start-master.sh
 
 # Pause
 sleep 20
 
 # Start Workers
-/root/spark/sbin/start-slaves.sh
+/root/spark/bin/start-slaves.sh
